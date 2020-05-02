@@ -12,7 +12,7 @@ def abrir(arquivo):
     with open('answer.json', 'r') as f:
             return json.load(f)
 #requisicao http passando o token 
-r = requests.get('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=0ac316f78866e4afdc7a26040505d62ab2b9792b')
+r = requests.get('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=Your_Token')
 if r.status_code == 200:
     resposta = json.loads(r.content)
     salvar(resposta)
